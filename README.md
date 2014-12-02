@@ -111,3 +111,4 @@ The following is the list of BBCode tags processed by BBRuby and their associate
     [center]          :center
     [right]           :right
     [br]              :br
+    [hr]              :hr
