@@ -170,7 +170,7 @@ module BBRuby
       :image],
     'Image (Aligned)' => [
       /\[img(:.+)? align=(left|right)\](.*?)\[\/img\1?\]/im,
-      '<img src="\3" alt="" style="float: \2;" />',
+      '<img src="\3" class="bb-ruby_img_align_\2" style="float: \2;" alt="" />',
       'Display an aligned image',
       '[img align=right]http://catsweekly.com/crazycat.jpg[/img]',
       :image],
