@@ -217,7 +217,7 @@ class TestBBRuby < Test::Unit::TestCase
   end
 
   def test_self_tag_list
-    assert_equal 40, BBRuby.tag_list.size
+    assert_equal 41, BBRuby.tag_list.size
   end
 
   def test_redefinition_of_tag_html
@@ -347,6 +347,10 @@ class TestBBRuby < Test::Unit::TestCase
 
   def test_br
     assert_equal 'One<br />Two<br />Three lines!', 'One[br]Two[br]Three lines!'.bbcode_to_html
+  end
+
+  def test_hr
+    assert_equal 'Text above<hr />Text below', 'Text above[hr]Text below'.bbcode_to_html
   end
 
 end

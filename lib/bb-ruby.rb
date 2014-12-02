@@ -247,7 +247,13 @@ module BBRuby
       "<br />",
       'Inserts line break tag',
       'One[br]Two[br]Three lines!',
-      :br]
+      :br],
+     'Horizontal line' => [
+       /\[hr\]/mi,
+       "<hr />",
+       'Inserts the horizontal line',
+       'Text above[hr]Text below',
+       :hr]
   }
 
   class << self
